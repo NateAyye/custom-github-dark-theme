@@ -8,13 +8,13 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
         with:
-          node-version: 14
-          registry-url: https://registry.npmjs.org/
+          node-version: 16.x
 
       - name: Install the dependencies
         run: npm i
@@ -22,11 +22,8 @@ jobs:
       - name: Install vsce
         run: npm i -g vsce
 
-      - name: Package
-        run: vsce package
-
-      - name: Publish
-        run: vsce publish --pat ${{ secrets.VSCE_PAT }}
+      - name: Package & Publish
+        run: vsce package && vsce publish --pat $VSCE_PAT
 
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
