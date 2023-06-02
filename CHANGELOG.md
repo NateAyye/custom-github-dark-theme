@@ -1,5 +1,17 @@
 # custom-github-dark-dimmed
 
+## 1.0.2
+
+### Patch Changes
+
+- Now Pleease
+- b379f14: Hoping this works
+- a6236b0: Fixing workflows
+- b192a25: Fixing workflows
+- 13c8442: Now it should work
+- abf46f7: Maybe fixed workflow
+- efa74c9: Testing github token in workflow
+
 ## 1.0.1
 
 ### Patch Changes
