@@ -27,3 +27,8 @@ jobs:
 
       - name: Publish
         run: vsce publish --pat ${{ secrets.VSCE_PAT }}
+
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
