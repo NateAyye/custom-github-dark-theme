@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.0
+
+### Minor Changes
+
+- Fixed!!!!!
+
 ## 1.0.3
 
 ### Patch Changes
