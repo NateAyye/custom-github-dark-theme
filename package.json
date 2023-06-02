@@ -28,7 +28,8 @@
   "scripts": {
     "version": "changeset",
     "prepublish": "changeset version",
-    "publish": "vsce package && vsce publish"
+    "publish": "vsce package && vsce publish",
+    "release": "vsce package && vsce publish"
   },
   "contributes": {
     "themes": [
