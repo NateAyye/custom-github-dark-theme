@@ -1,9 +1,7 @@
-# Change Log
+# custom-github-dark-dimmed
 
-All notable changes to the "myTheme" extension will be documented in this file.
+## 1.0.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Major Changes
 
-## [Unreleased]
-
-- Initial release
+- Used GitHub Dark Dimmed Theme for syntax highlighting but custom editor colors.
