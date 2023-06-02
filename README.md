@@ -17,13 +17,13 @@
 
 ## Screenshots
 
-![Custom Github Dark Dimmed Theme](./public/screenshot.png)
+![Custom Github Dark Dimmed Theme](https://github.com/NateAyye/custom-github-dark-theme/blob/main/public/screenshot.png?raw=true)
 
-![Custom Github Dark Dimmed Theme](./public/screenshot2.png)
+![Custom Github Dark Dimmed Theme](https://github.com/NateAyye/custom-github-dark-theme/blob/main/public/screenshot2.png?raw=true)
 
-![Custom Github Dark Dimmed Theme](./public/screenshot3.png)
+![Custom Github Dark Dimmed Theme](https://github.com/NateAyye/custom-github-dark-theme/blob/main/public/screenshot3.png?raw=true)
 
-![Custom Github Dark Dimmed Theme](./public/screenshot4.png)
+![Custom Github Dark Dimmed Theme](https://github.com/NateAyye/custom-github-dark-theme/blob/main/public/screenshot4.png?raw=true)
 
 ## Override this theme
 
