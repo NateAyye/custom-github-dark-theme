@@ -1,13 +1,12 @@
 name: Release
-
 on:
   push:
     branches:
       - main
-      
-name: Deploy Extension
+
 jobs:
-  deploy:
+  release:
+    name: Deploy Extension
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
