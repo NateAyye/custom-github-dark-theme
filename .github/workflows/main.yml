@@ -22,5 +22,8 @@ jobs:
       - name: Install vsce
         run: npm i -g vsce
 
+      - name: Package
+        run: vsce package
+
       - name: Publish
-        run: vsce publish -p ${{ secrets.VSCE_PAT }}
+        run: vsce publish --pat ${{ secrets.VSCE_PAT }}
