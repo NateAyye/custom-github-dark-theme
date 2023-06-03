@@ -13,18 +13,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: execute gitversion
+        id: gitversion # step id used as reference for output values
+        uses: gittools/actions/gitversion/execute@v0.9
+
+      - name: print gitversion
+        run: |
+          echo "Major: ${{ steps.gitversion.outputs.major }}"
+          echo "Minor: ${{ steps.gitversion.outputs.minor }}"
+          echo "Patch: ${{ steps.gitversion.outputs.patch }}"
+          echo "MajorMinorPatch: ${{ steps.gitversion.outputs.majorMinorPatch }}"
+          echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
       - name: Create GitHub Release
+        id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.changesets.oputputs.tag }}
-          release_name: Release ${{ steps.changesets.oputputs.tag }}
+          tag_name: ${{ steps.gitversion.outputs.semVer }}
+          release_name: Release ${{ steps.gitversion.outputs.semVer }}
 
       - name: Install dependencies
         run: npm install
