@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.5
+
+### Patch Changes
+
+- Fixed pull_request template with the correct links
+
 ## 1.1.4
 
 ### Patch Changes
