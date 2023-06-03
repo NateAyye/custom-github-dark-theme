@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.7
+
+### Patch Changes
+
+- Testing Releases for Github Actions
+
 ## 1.1.6
 
 ### Patch Changes
