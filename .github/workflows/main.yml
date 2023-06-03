@@ -30,7 +30,7 @@ jobs:
         uses: changesets/action@v1
         with:
           title: Release Tracking
-          publish: npm run publish
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
           VSCE_PAT: ${{ secrets.VSCE_PUBLISHER_TOKEN }}

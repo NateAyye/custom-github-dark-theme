@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.6
+
+### Patch Changes
+
+- Testing out workflows for changesets
+
 ## 1.1.5
 
 ### Patch Changes
