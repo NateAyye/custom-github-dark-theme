@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.17
+
+### Patch Changes
+
+- Gave up on trying to get the github releases working in the workflow
+
 ## 1.1.16
 
 ### Patch Changes

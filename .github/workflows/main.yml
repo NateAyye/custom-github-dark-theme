@@ -4,45 +4,23 @@ on:
   pull_request:
     branches:
       - 'main'
-
 jobs:
   release:
-    name: Pubish to VS Code Marketplace
+    name: Final
+
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: install gitversion tool
-        uses: gittools/actions/gitversion/setup@v0.9
         with:
-          versionSpec: '5.1.x'
-
-      - name: execute gitversion
-        id: gitversion # step id used as reference for output values
-        uses: gittools/actions/gitversion/execute@v0.9
-
-      - name: print gitversion
-        run: |
-          echo "Major: ${{ steps.gitversion.outputs.major }}"
-          echo "Minor: ${{ steps.gitversion.outputs.minor }}"
-          echo "Patch: ${{ steps.gitversion.outputs.patch }}"
-          echo "MajorMinorPatch: ${{ steps.gitversion.outputs.majorMinorPatch }}"
-          echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
+          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.gitversion.outputs.semVer }}
-          release_name: Release ${{ steps.gitversion.outputs.semVer }}
 
       - name: Install dependencies
         run: npm install
