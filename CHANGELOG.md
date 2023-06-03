@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.4
+
+### Patch Changes
+
+- Fixed the step 7 in the Contribute section of the README file
+
 ## 1.1.3
 
 ### Patch Changes

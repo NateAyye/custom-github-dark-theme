@@ -39,12 +39,11 @@ To override this (or any other) theme in your personal config file, please follo
 6. Make changes to the [`/themes/MyGithubDarkDimmed-color-theme.json`](https://github.com/NateAyye/custom-github-dark-theme/blob/main/themes/MyGithubDarkDimmed-color-theme.json) file. (or create a new one and reference it in [`package.json`](https://github.com/NateAyye/custom-github-dark-theme/blob/main/package.json) under `contributes.themes`)
    - **UI**: For all changes to the "outer UI", like (status bar, file navigation etc.), take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
    - **Syntax**: For changes to the "code highlighting", examine the syntax scopes by invoking the [`Developer: Inspect Editor Tokens and Scopes`](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector) command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
-7. We are using the changesets/cli to manage our changelog and versioning. To create a new version, run `npm run changeset` and follow the prompts.
+7. We are using the changesets/cli to manage our changelog and versioning. To create a new version, run `npm run version` and follow the prompts. (will create a new version and changelog once prompts are completed)
    - Select the type of change you're making. (patch, minor, major)
    - Provide a detailed description of your changes.
-8. Then run `npm run version` to bump the version and create a new changelog.
-9. Now you can commit your changes and push them to your forked repo.
-10. After you push your changes, you can open a PR to the main repo.
-11. TA-DA! You're done! 🎉
+8. Now you can commit your changes and push them to your forked repo.
+9. After you push your changes, you can open a PR to the main repo, and we will review it as soon as possible. 🙌
+10. TA-DA! You're done! 🎉
 
 **Enjoy!**
