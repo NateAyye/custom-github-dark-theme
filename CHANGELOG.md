@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.3
+
+### Patch Changes
+
+- Updated the README file to include the Contribute section with a step-by-step walkthrough
+
 ## 1.1.2
 
 ### Patch Changes

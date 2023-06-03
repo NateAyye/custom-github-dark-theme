@@ -2,7 +2,7 @@
   "name": "custom-github-dark-dimmed",
   "displayName": "Custom Github Dark Dimmed",
   "description": "VSCode Color Theme Based of of the Github Dark Dimmed Token Color Customizations Theme",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "license": "MIT",
   "icon": "public/icon.png",
   "repository": {
@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "version": "changeset version",
+    "version": "changeset && changeset version",
     "publish": "vsce package && vsce publish",
     "release": "vsce package && vsce publish"
   },
