@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.13
+
+### Patch Changes
+
+- test release in workflow
+
 ## 1.1.12
 
 ### Patch Changes
