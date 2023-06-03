@@ -1,5 +1,11 @@
 # custom-github-dark-dimmed
 
+## 1.1.2
+
+### Patch Changes
+
+- Updated the main workflow to support publishing on push and pull_request to the main branch.
+
 ## 1.1.1
 
 ### Patch Changes
