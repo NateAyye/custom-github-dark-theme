@@ -7,10 +7,10 @@
   "icon": "public/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NateAyye/custom-github-dark-dimmed"
+    "url": "https://github.com/NateAyye/custom-github-dark-theme"
   },
   "bugs": {
-    "url": "https://github.com/NateAyye/custom-github-dark-dimmed/issues"
+    "url": "https://github.com/NateAyye/custom-github-dark-theme/issues"
   },
   "engines": {
     "vscode": "^1.78.0"
